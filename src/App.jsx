@@ -84,7 +84,8 @@ function App() {
     dispatch({ type: ACTIONS.CLEAR_SEARCH, payload: '' })
   }
   return (
-    <>
+    <main>
+      <h2>Practice Set 11</h2>
       <div>
         <label htmlFor="nameSearch">Search:</label> <input type="text" id='nameSearch' onChange={(e) => dispatch({ type: ACTIONS.SEARCH, payload: e.target.value })} value={state.searchText} />
         <button disabled={state.searchText === ''} type='button' onClick={searchClickHandler}>Search</button>
@@ -145,7 +146,7 @@ function App() {
           )
         )}
       </div>
-    </>
+    </main>
   )
 }
 
